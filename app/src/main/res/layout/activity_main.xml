@@ -1,0 +1,47 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/material_blue">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:textColor="@color/button_material_light"
+        android:padding="20dp"
+        android:text="IEEE-CS Internal"
+        android:id="@+id/tvLoginInstructions"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLoginInstructions"
+        android:id="@+id/tvLoggedInAs"
+        android:padding="20dp"
+        android:textSize="25sp"
+        android:textColor="@color/bright_foreground_material_dark"
+        android:text="Logged in as "/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_account_remove_white_48dp"
+        android:padding="11dp"
+        android:id="@+id/iconLogout"
+        android:layout_alignBottom="@+id/tvLoggedInAs"
+        android:layout_toRightOf="@+id/tvLoggedInAs" />
+    </RelativeLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:padding="20dp"/>
+
+        />
+
+
+</LinearLayout>
