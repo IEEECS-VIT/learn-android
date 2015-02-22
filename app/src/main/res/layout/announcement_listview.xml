@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/announcementListItem"
+    android:background="@drawable/background"
+    android:padding="20dp">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Venue : SJT"
+        android:textSize="24sp"
+        android:id="@+id/tvVenue"
+        android:textColor="@color/blue"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="10-11AM"
+        android:textSize="24sp"
+        android:textColor="@color/red"
+        android:id="@+id/tvTime"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Krishna Kalubandi"
+        android:layout_below="@+id/tvVenue"
+        android:id="@+id/tvPersonOne"
+        android:textSize="26sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Kunal Nagpal"
+        android:layout_below="@+id/tvPersonOne"
+        android:id="@+id/tvPersonTwo"
+        android:textSize="26sp"/>
+
+
+</RelativeLayout>

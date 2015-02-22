@@ -7,4 +7,5 @@
     </style>
     <color name="blue">#0000ff</color>
     <color name="material_blue">#3F51B5</color>
+    <color name="red">#ff0000</color>
 </resources>

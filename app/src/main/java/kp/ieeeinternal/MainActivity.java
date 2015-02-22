@@ -1,6 +1,7 @@
 package kp.ieeeinternal;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -43,9 +44,10 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         String item = (String) parent.getItemAtPosition(position);
-
-
+        if (item.equals("Announcement")) {
+            startActivity(new Intent(MainActivity.this, AnnouncementActivity.class));
         }
+    }
 
     @Override
     public void onClick(View v) {
