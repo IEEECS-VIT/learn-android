@@ -1,8 +1,6 @@
-package kp.ieeeinternal;
+package com.ieeecs.android;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.pm.ActivityInfo;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +10,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+
 
 /**
  * Created by Krishna Kalubandi on 22-02-2015.

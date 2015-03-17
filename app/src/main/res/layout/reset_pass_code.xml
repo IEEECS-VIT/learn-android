@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:hint="Code"
+        android:id="@+id/code"
+        android:layout_gravity="center" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:hint="New password"
+        android:id="@+id/npass"
+        android:layout_gravity="center" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/conbtn"
+        android:background="@drawable/btn_black"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:text="Continue"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/cancel"
+        android:background="@drawable/btn_blue_black"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:text="Cancel"/>
+</LinearLayout>

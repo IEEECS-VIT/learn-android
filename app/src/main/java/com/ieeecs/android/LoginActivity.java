@@ -1,4 +1,4 @@
-package kp.ieeeinternal;
+package com.ieeecs.android;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -17,6 +17,8 @@ import org.json.JSONObject;
 import org.jsoup.Jsoup;
 
 import java.util.HashMap;
+
+
 
 /**
  * Created by kp on 30-01-2015.
@@ -40,7 +42,14 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.login);
         SharedPreferences settings = getSharedPreferences(PREFS_TITLE,0);
         boolean hasLoggedIn = settings.getBoolean("hasLoggedIn",false);
-        intent = new Intent(LoginActivity.this,MainActivity.class);
+        intent = new Intent(LoginActivity.this,NavigationMain.class);
+        Button loginSkip = (Button) findViewById(R.id.loginSkip);
+        loginSkip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this,NavigationMain.class));
+            }
+        });
         if(hasLoggedIn){
             startActivity(intent);
             LoginActivity.this.finish();
@@ -123,9 +132,9 @@ public class LoginActivity extends Activity {
         {
             try{
                 jsonLogin = Jsoup.connect(memberUrl).ignoreContentType(true).
-                        timeout(20000).execute().body();
+                        timeout(30000).execute().body();
             }catch(Exception e){
-                Log.d("Jsoup",e.getMessage());
+
             }
             return null;
         }
