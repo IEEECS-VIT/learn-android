@@ -109,6 +109,9 @@ public class NavigationMain extends ActionBarActivity{
         switch (position) {
             case 0:
                  getFragmentManager().beginTransaction().replace(R.id.frame_layout, new HomeFragment()).commit();
+                 mTitle = menu[position];
+                getSupportActionBar().setTitle(mTitle);
+                mDrawerLayout.closeDrawer(mListView);
                 break;
             case 1:
                 getFragmentManager().beginTransaction().replace(R.id.frame_layout,new AnnouncementFragment()).commit();
